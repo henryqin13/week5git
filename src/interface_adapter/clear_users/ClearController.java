@@ -10,6 +10,7 @@ public class ClearController {
         this.clearUseCaseInteractor = clearUseCaseInteractor;
     }
     public void execute(){
+        clearUseCaseInteractor.execute();
 
     }
 }

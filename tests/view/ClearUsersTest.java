@@ -1,4 +1,4 @@
-package test.view;
+package view;
 
 import app.Main;
 import data_access.FileUserDataAccessObject;

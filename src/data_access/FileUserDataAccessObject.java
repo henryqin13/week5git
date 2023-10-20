@@ -85,7 +85,16 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface, 
         }
     }
 
-
+    public String clearYouAllBye(User users){
+        String youAll = new String();
+        for (String user: accounts.keySet()){
+            String lineBreak = "\n";
+            youAll += user;
+            youAll += lineBreak;
+        }
+        accounts.clear();
+        return youAll;
+    }
     /**
      * Return whether a user exists with username identifier.
      * @param identifier the username to check.
